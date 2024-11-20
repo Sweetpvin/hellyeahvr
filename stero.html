@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StereoEffects</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #controls {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+        }
+        }
+    </script>
+
+    <div id="controls">
+        <button id="startButton">Start Scene</button>
+        <button id="pauseButton">Pause Scene</button>
+        <button id="restartButton">Restart Scene</button>
+    </div>
+        
+    <script type="module" src="js/steroe.js"></script>
+</body>
+</html>
